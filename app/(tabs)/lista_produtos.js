@@ -1,30 +1,25 @@
 import React, { useState, useEffect } from "react";
 import { View, Text, TextInput, Image, ScrollView } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import styles from "../../assets/css/lista_produtos_style"
+import api from "../../services/api"
+import styles from "../../assets/css/lista_produtos_style";
 import Icon from "react-native-vector-icons/AntDesign";
+
 
 const listaProdutos = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-
     async function loadProducts() {
-        const url = "https://api-produtos-9jmi.onrender.com/products";
-        const response = await fetch(url);
+      const response = await api.get('/products');
 
-
-        if (response.ok) {
-            const data = await response.json();
-            setProducts(data);
-        } else {
-            alert('Erro ao buscar produtos');
-        }
+      setProducts(response.data);
     }
 
     loadProducts();
-    
-}, []);
+
+  }, []);
+
 
   return (
     <ScrollView style={styles.container}>

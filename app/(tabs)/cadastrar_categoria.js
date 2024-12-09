@@ -19,6 +19,8 @@ const cadastroCategoria = () => {
         } catch (error) {
             console.error('Erro na requisição:', error);
         } 
+
+        setNome('');
     };
 
     return (

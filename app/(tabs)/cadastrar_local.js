@@ -61,7 +61,16 @@ const cadastroLocal = () => {
             console.error('Erro na requisição:', error)
 
         }
-    }
+
+        setNome('');
+        setCep('');
+        setLogradouro('');
+        setNumero('');
+        setBairro('');
+        setCidade('');
+        setEstado('');
+        
+    };
 
 
     return (

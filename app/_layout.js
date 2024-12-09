@@ -12,6 +12,8 @@ const rootLayout = () => {
 
             <Stack.Screen name="editar_perfil" options={{ headerShown: false }}></Stack.Screen>
 
+            <Stack.Screen name="camera" options={{ headerShown: false }}></Stack.Screen>
+
         </Stack>
     )
 };

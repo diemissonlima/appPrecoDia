@@ -44,7 +44,7 @@ export default styles = StyleSheet.create({
         fontSize: 16,
       },
       imageContainer: {
-        marginBottom: 20,
+        marginBottom: 5,
         alignItems: 'center',
       },
       image: {
@@ -52,10 +52,6 @@ export default styles = StyleSheet.create({
         height: 200,
         borderRadius: 10,
         marginBottom: 10,
-      },
-      removeText: {
-        color: 'red',
-        fontSize: 14,
       },
       button: {
         backgroundColor: '#28a745',
@@ -68,4 +64,15 @@ export default styles = StyleSheet.create({
         fontSize: 18,
         fontWeight: 'bold',
       },
+      removeText: {
+        color: 'white',
+        fontSize: 14,
+      },
+      buttonRemove: {
+        backgroundColor: 'red',
+        padding: 15,
+        borderRadius: 5,
+        alignItems: 'center',
+        marginBottom: 10
+      }
 });
