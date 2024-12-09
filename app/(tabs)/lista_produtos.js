@@ -10,7 +10,7 @@ const listaProdutos = () => {
   useEffect(() => {
 
     async function loadProducts() {
-        const url = "https://api-produtos-6p7n.onrender.com/products";
+        const url = "https://api-produtos-9jmi.onrender.com/products";
         const response = await fetch(url);
 
 
@@ -42,7 +42,7 @@ const listaProdutos = () => {
                 products.map(product => (
 
                     <View style={styles.card} key={product.id} className="border border-gray-300 rounded p-2 mb-2">
-                        <Image source={{ uri: `https://api-produtos-6p7n.onrender.com/${product.image}` }} style={styles.productImage} />
+                        <Image source={{ uri: `https://api-produtos-9jmi.onrender.com/${product.image}` }} style={styles.productImage} />
                         <Text style={styles.productName}>{product.nome}</Text>
 
                         <View style={styles.viewUsuario}>
@@ -56,7 +56,7 @@ const listaProdutos = () => {
                         </View>
                         
                         <Text style={styles.productPrice}>R$ {product.preco}</Text>
-                        <Text>{product.descricao}</Text>
+                        <Text style={styles.productDescription}>{product.descricao}</Text>
                     </View>
                 ))
             }

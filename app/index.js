@@ -40,8 +40,13 @@ const Inicio = () => {
         }
 
         if (usuarioLogado){
-            Alert.alert('usuario logado com sucesso!!!')
-            router.navigate('(tabs)/lista_produtos')
+            Alert.alert(
+                'Login',
+                'Usuario logado com sucesso, clique em OK para continuar!!',
+                [{
+                    onPress: () => router.replace('(tabs)/lista_produtos')
+                }]
+            )
         }
 
     }

@@ -13,7 +13,7 @@ const Profile = () => {
         logout();
         console.log("deslogando usuario", usuarioLogado);
         if (usuarioLogado === false) {
-            router.replace('../index')
+            router.replace('/')
         }
       };
 

@@ -61,6 +61,8 @@ const FormScreen = () => {
     formData.append('categoria', categoria);
     formData.append('observacao', observacao);
 
+    console.log(formData);
+
     if (foto) {
       formData.append('foto', {
         uri: foto.uri,
@@ -70,7 +72,7 @@ const FormScreen = () => {
     }
 
     try {
-      const response = await fetch('https://api-produtos-6p7n.onrender.com/products', {
+      const response = await fetch('https://api-produtos-9jmi.onrender.com/products', {
         method: 'POST',
         body: formData,
         headers: {

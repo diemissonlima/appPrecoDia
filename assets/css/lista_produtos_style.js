@@ -56,6 +56,11 @@ export default styles = StyleSheet.create({
     fontWeight: 'bold',
     color: '#008000',
   },
+  productDescription: {
+    fontSize: 18,
+    color: 'black',
+    marginTop: 15,
+  },
   viewUsuario: {
     flexDirection: 'row'
   }

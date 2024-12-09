@@ -27,8 +27,6 @@ const useAuthStore = create((set) => ({
                 set({ usuarioLogado: true, usuario: usuario, senha: senha, token: loginData.accessToken, image: loginData.image });
             }
 
-            console.log('loginData', loginData)
-
         } catch (error) {
 
         }
